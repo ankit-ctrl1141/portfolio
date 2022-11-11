@@ -5,11 +5,12 @@
         width: 100%;
         height: calc(100vh - 70px);
         background-color: lightsalmon;
-        position: relative;
+        position: relative;   // so that it does hide behind the topbar
         top: 70px;
+        scroll-behavior: smooth;  // on scrolling, our page will scroll smoothly
         scroll-snap-type: y mandatory;
-        scrollbar-width: none;  // for firefox
-        &::-webkit-scrollbar{
+        scrollbar-width: none;  // for firefox (to hide the scrollbar)
+        &::-webkit-scrollbar{   // for chrome (to hide the scrollbar)
             display: none;
         }
 

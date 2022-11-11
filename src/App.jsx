@@ -6,11 +6,21 @@ import Testimonials from './components/testimonials/Testimonials.jsx';
 import Topbar from './components/topbar/Topbar.jsx'
 import Works from './components/works/Works.jsx';
 import './app.scss'
+import Menu from './components/menu/Menu.jsx';
 
 function App() {
+  const [menuOpen, setMenuOpen] = React.useState(false) 
+
+
+  function handleClickHamburger(){
+    setMenuOpen((prevState)=>{
+           return !prevState;
+    })
+  }
   return (
     <div className="app">
-      <Topbar/>
+      <Topbar menuOpen={menuOpen} handleClickHamburger={handleClickHamburger} />
+      <Menu menuOpen={menuOpen} handleClickHamburger={handleClickHamburger}/>
       <div className="sections">
     
         <Intro/>
