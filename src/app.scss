@@ -7,5 +7,11 @@
         background-color: lightsalmon;
         position: relative;
         top: 70px;
+
+        > *{  //for each element(like intro,portfolio etc.) inside .sections 
+            width: 100vw;
+            height: calc(100vh - 70px);
+
+        }
     }
 }
