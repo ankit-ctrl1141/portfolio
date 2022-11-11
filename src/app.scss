@@ -8,6 +8,10 @@
         position: relative;
         top: 70px;
         scroll-snap-type: y mandatory;
+        scrollbar-width: none;  // for firefox
+        &::-webkit-scrollbar{
+            display: none;
+        }
 
         > *{  //for each element(like intro,portfolio etc.) inside .sections 
             width: 100vw;
