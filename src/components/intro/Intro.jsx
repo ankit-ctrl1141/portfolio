@@ -6,7 +6,7 @@ export default function Intro() {
   const textRef = React.useRef();    //here,it is like, document.querySelector('something')
        
 
-  React.useEffect(() => {            //using this in place of componentDidMount
+  React.useEffect(() => {       //using this in place of componentDidMount
     console.log(textRef)
     init(textRef.current, {
       showCursor: true,
