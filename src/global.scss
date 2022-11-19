@@ -1,1 +1,9 @@
 $mainColor : #15023a;    //here we have stored our color in a CSS variable (mainColor)
+
+$width : 768px;
+
+@mixin mobile{
+    @media (max-width: #{$width}){
+        @content
+    }
+}
