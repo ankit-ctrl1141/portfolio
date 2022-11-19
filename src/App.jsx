@@ -2,11 +2,12 @@ import React from 'react'
 import Contact from './components/contact/Contact.jsx';
 import Intro from './components/intro/Intro.jsx';
 import Portfolio from './components/portfolio/Portfolio.jsx';
-import Testimonials from './components/testimonials/Testimonials.jsx';
+
 import Topbar from './components/topbar/Topbar.jsx'
 import Works from './components/works/Works.jsx';
 import './app.scss'
 import Menu from './components/menu/Menu.jsx';
+import Testimonials from './components/testimonials/Testimonials.jsx';
 
 function App() {
   const [menuOpen, setMenuOpen] = React.useState(false) 
@@ -26,8 +27,8 @@ function App() {
         <Intro/>
         <Portfolio/>
         <Works/>
-        <Testimonials/>
         <Contact/>
+       <Testimonials/>
       </div>
     </div>
   );
