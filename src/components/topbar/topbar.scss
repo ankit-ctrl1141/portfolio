@@ -39,11 +39,16 @@
                   .icon{
                       font-size: 18px;
                       margin-right: 5px;
+                      
                   }
 
-                  span{
+                  a:visited {
+                   color: inherit;
+                  }
+                  a{
                     font-size: 15px;
                     font-weight: 500;
+                    cursor: pointer;
                   }
               }
           }
@@ -72,6 +77,8 @@
     &.active{   // syntax used in saas
         background-color: $mainColor;
         color: white;
+
+       
 
         .hamburger{
             span{
